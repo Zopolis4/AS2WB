@@ -4,14 +4,12 @@ This is the repository for the Automatic Save to Wayback Machine userscript/chro
 
 This script is heavily based on ATRescue's [script](https://archiveteam.org/index.php?title=User:ATrescue/AutoWB.js), but changed to use the standard xhr instead of the GM_xhr, in order to allow compatibility with chrome when not run in a userscript manager.
 
-Folders and Files:
-AS2WB- Unpacked, unmimified chrome extension
-AS2WB (Minified)- Unpacked chrome extension
-AS2WB.js- Normal version of the usercript
-AS2WB (Commented).js- Version of the userscript with some commented documentation
-readme.md- Hi!
+The userscript can be found [here](https://greasyfork.org/en/scripts/426028-automatic-save-to-wayback-machine)
 
-Credits:
-Original script author: Flare0n
-Enhanced script author: ATRescue
-This version: Zopolis4
+Folders and Files:</br>AS2WB- Unpacked, unmimified chrome extension</br>
+AS2WB (Minified)- Unpacked chrome extension</br>
+AS2WB.js- Normal version of the usercript
+</br>AS2WB (Commented).js- Version of the userscript with some commented documentation</br>readme.md- Hi!
+
+Credits:</br>Original script author: Flare0n</br>
+Enhanced script author: ATRescue</br>This version: Zopolis4

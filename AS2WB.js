@@ -4,14 +4,6 @@
 // @description    Automatically saves all the pages (and their outlinks) you visit into the Wayback Machine.
 // @version	1.0.0
 // @match	*
-// @match	http://*
-// @match	https://*
-// @match	http://*/*
-// @match	https://*/*
-// @match	http://web.archive.org/web/*
-// @match	https://web.archive.org/web/*
-// @match	http://web.archive.org/save/*
-// @match	https://web.archive.org/save/*
 // @run-at document-start
 // ==/UserScript==
 

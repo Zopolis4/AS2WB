@@ -1,6 +1,6 @@
 {
     "name": "AutoSave to Wayback Machine",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Automatically saves the pages you visit and all outlinks on the page to the Wayback Machine.",
     "manifest_version": 3,
     "content_scripts": [{

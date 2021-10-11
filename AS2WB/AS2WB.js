@@ -2,7 +2,7 @@
 // @name	Automatic Save to Wayback Machine
 // @namespace      Zopolis4
 // @description    Automatically saves all the pages (and their outlinks) you visit into the Wayback Machine.
-// @version	1.0.0
+// @version	1.0.1
 // @match	*
 // @run-at document-start
 // ==/UserScript==
@@ -23,6 +23,7 @@
 
 	xhr.open("GET", adrs1);
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	console.log(adrs1);
 
 	window.addEventListener("load", function() {
 			var sent_array = [];

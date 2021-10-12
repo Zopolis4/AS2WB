@@ -1,14 +1,13 @@
 function parseURLs() {
-  // Check if matches "<h2 class="blue">This page is available on the web!</h2>".
-  if (document.getElementsByTagName('body')[0].innerHTML.indexOf("<h2 class=\"blue\">This page is available on the web!</h2>") !== -1) {
-    var a = location.href;
-    a.match(/^https?:\/\/web.archive.org\/web/) ? location.href = decodeURI(a).replace(/^https?:\/\/web.archive.org\/(web\/(\d|\*)+|save)\/(https?:\/\/)?/, "https://web.archive.org/save/") : location.href = "https://web.archive.org/save/" + a;
+  var url = "https://web.archive.org/save/" + location.href;
+  if (location.hostname == "web.archive.org") {
+    url = "https://web.archive.org/save/" + encodeURI(decodeURI(location.href).replace(/(https?:\/\/)?(www\.)?web\.archive\.org\/(|save|web\/\*\/[0-9]+|web\/[0-9]+|\*\/[0-9]+|web\/\*\/|web|\*\/|[0-9]+)?(\/|id_\/)?/, ""));
   }
-  savePages();
+  savePages(url);
 }
 
-function savePages() {
-  chrome.runtime.sendMessage({action: "savePage", url: location.href}, function(response) {
+function savePages(url) {
+  chrome.runtime.sendMessage({action: "savePage", target: url}, function(response) {
     console.log(response.url);
   });
 }
